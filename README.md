@@ -1,3 +1,5 @@
+[![NPM version](https://badge.fury.io/js/luckio.svg)](https://badge.fury.io/js/luckio.svg)
+
 # Lucky
 
 Get lucky in a certain percentage of your tries.
