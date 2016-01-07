@@ -4,7 +4,11 @@
 var math = require("./math");
 
 /**
- * Lucky number constructor.
+ * Pick a lucky number and return a function that matches its picked lucky number
+ * to the initial one. If equal it will return `true`, if not `false`.
+ *
+ * @param {Number} chance Lucky chance to pick a number
+ * @returns {Function}
  */
 function lucky(chance) {
   var min = 1;
@@ -21,5 +25,3 @@ function lucky(chance) {
  * Main export.
  */
 module.exports = lucky;
-
-console.log(lucky(50)());
