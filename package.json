@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A little library for lucky chance picking",
   "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dvalchanov/lucky.git"
@@ -15,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/dvalchanov/lucky/issues"
   },
-  "homepage": "https://github.com/dvalchanov/lucky#readme"
+  "homepage": "https://github.com/dvalchanov/lucky#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  }
 }
