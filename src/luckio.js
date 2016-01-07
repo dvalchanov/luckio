@@ -10,7 +10,7 @@ var math = require("./math");
  * @param {Number} chance Lucky chance to pick a number
  * @returns {Function}
  */
-function lucky(chance) {
+function luckio(chance) {
   var min = 1;
   var max = math.maxRange(chance);
   var luckyNumber = math.randomNumber(this._min, this._max);
@@ -24,4 +24,4 @@ function lucky(chance) {
 /**
  * Main export.
  */
-module.exports = lucky;
+module.exports = luckio;

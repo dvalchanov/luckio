@@ -9,12 +9,12 @@ On the first call you set the lucky chance, on each consequent call
 it checks if the current pick is a lucky one.
 
 ```js
-var lucky = require("lucky");
+var luckio = require("luckio");
 
 // 1% lucky chance & memoizing the first call
-var isLucky = lucky(1);
+var isLucky = luckio(1);
 isLucky();
 
 // 50% lucky chance & no memoization
-lucky(50)();
+luckio(50)();
 ```
