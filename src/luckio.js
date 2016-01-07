@@ -13,10 +13,10 @@ var math = require("./math");
 function luckio(chance) {
   var min = 1;
   var max = math.maxRange(chance);
-  var luckyNumber = math.randomNumber(this._min, this._max);
+  var luckyNumber = math.randomNumber(min, max);
 
   return function() {
-    if (math.randomNumber(this._min, this._max) === luckyNumber) return true;
+    if (math.randomNumber(min, max) === luckyNumber) return true;
     return false;
   }
 }
