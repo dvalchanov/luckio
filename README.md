@@ -42,3 +42,15 @@ An example of 50% chance to pick `true`:
 luckio(50)(); // false
 luckio(50)(); // true
 ```
+
+## Installation
+
+```bash
+npm install luckio
+```
+
+## Tests
+
+```bash
+make test
+```
