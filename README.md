@@ -2,7 +2,7 @@
 
 # Luckio
 
-A lucky chance getter
+A lucky chance picker
 
 The purpose of this library is to act like a lottery, where you have a certain
 chance to get lucky. You set the chance percentage to get lucky and then receive
