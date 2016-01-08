@@ -2,21 +2,43 @@
 
 # Luckio
 
-Get lucky in a certain percentage of your tries.
+A lucky chance getter
+
+The purpose of this library is to act like a lottery, where you have a certain
+chance to get lucky. You set the chance percentage to get lucky and then receive
+`false` if you are not or `true` if you are.
 
 ## Example
 
-If you are lucky it returns `true`, if not `false`.
-On the first call you set the lucky chance, on each consequent call
-it checks if the current pick is a lucky one.
-
 ```js
 var luckio = require("luckio");
+```
 
-// 1% lucky chance & memoizing the first call
+`luckio` returns a lucky function when called the first time, which can then be
+used on each turn.
+
+An example of 1% chance to pick `true`:
+
+```js
 var isLucky = luckio(1);
-isLucky();
+isLucky(); // false
+isLucky(); // false
+.
+.
+.
+// At some point:
+isLucky(); // true
+.
+.
+.
+isLucky(); // false
+```
 
-// 50% lucky chance & no memoization
-luckio(50)();
+You can also make the second call right away and not assign the function.
+
+An example of 50% chance to pick `true`:
+
+```js
+luckio(50)(); // false
+luckio(50)(); // true
 ```
